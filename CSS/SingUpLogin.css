@@ -1,0 +1,91 @@
+body {
+    /* background-image: radial-gradient(circle at 50% -20.71%, #a6ffa7 0, #90ffab 12.5%, #76ffb0 25%, #54ffb5 37.5%, #08ffbb 50%, #00fbc2 62.5%, #00f8ca 75%, #00f4d3 87.5%, #00f1dc 100%); */
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(Fondos/mujer-cocinando.jpg) no-repeat fixed;
+    /* background: radial-gradient(circle, rgba(88,68,56,1) 32%, rgba(46,34,28,1) 100%); */
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    flex-direction: column;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+form{
+    width: 500px;
+    border: 2px solid rgb(96, 126, 151);
+    padding: 5rem;
+    background-color:white;
+    border: none;
+    border-radius: 20px;
+}
+
+h1{
+    display: block;
+    border: 2px solid white;
+    /* width: 70%; */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+input{
+    display: block;
+    border: 2px solid black;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: black;
+    padding: .8rem;
+    color: white;
+    border: none;
+    width: 60%;
+    border-radius: 10px;
+}
+button:hover{
+    /* background-color: #08ffbb; */
+    background-color: rgb(136, 123, 118);
+}
+
+a{
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:rgb(121, 89, 65);
+}
+
+.error{
+    color: red;
+    padding: 2px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.aviso{
+    color: rgb(19, 199, 19);
+    padding: 2px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}

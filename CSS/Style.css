@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    /* background: linear-gradient(to right,#76ffb0 1000px, #54ffb5 1200px, #08ffbb 1300px,#00fbc2 1500px, #00f8ca 1700px); */
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(Fondos/Ingredents.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.Desc{
+    width: 70%;
+    /* height: 80vh; */
+    margin: 100px auto 0 auto; /* Mueve el formulario hacia abajo */
+    border: 2px solid rgb(96, 126, 151);
+    padding: 5rem;
+    background-color:whitesmoke;
+    border: none;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back{
+    padding: 32px 0;
+    background-color: black;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 24px;
+    color: #bad8cd;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.log{
+    font-size: 24px;
+    text-transform: uppercase;
+    height: 78px;
+    width: auto;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #bad8cd;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .back{
+        padding: 70px 0;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
